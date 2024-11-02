@@ -1,34 +1,36 @@
-# Домашние задания по курсу «NDSE - Настройка окружения Node.js и библиотека Express.js
 
-## Блок 1: Настройка окружения
 
-1.1 [Начало работы с Node.js](001-intro)
+### Задание 1
 
-1.2 [Аргументы командной строки и console](002-console)
+Текущая дата и время в формате ISO:  
+`current-date current`
 
-1.3 [Пакеты и модули Node.js](003-packages)
+Текущий год:  
+`current-date current --year` или `current-date current -y`
 
-1.4 [Потоки. Модули: path, fs](004-stream)
+Текущий месяц:  
+`current-date current --month` или `current-date current -m`
 
-1.5 [Http-module. Переменные окружения](005-http)
+Дата в календарном месяце:  
+`current-date current --date` или `current-date current -d`
 
-## Блок 2: Библиотека Express.js
+`current-date add -d 2` - дата и время в формате ISO на два дня вперед
 
-2.1 [Express](006-express)
+`current-date sub --month 1` - дата и время в формате ISO на 1 месяц назад
 
-2.2 [Middleware. Паттерн "цепочка обязанностей"](007-middleware)
 
-2.3 [EJS. Шаблонизаторы](008-ejs)
+### Задание 2
 
-2.4 [Docker: установка и настройка](009-docker)
+`game` - начало игры
 
-2.5 [Docker: контейнеризация приложения](009-docker-2)
-
-2.6 [Базы данных и хранение данных](010-db)
-
-2.7 [Подключение MongoDB в Node.js-приложение](011-mongo)
-
-2.8 [Аутентификация. Passport.js](012-auth)
-
-2.9 [Realtime-взаимодействие с сервером, протокол websocket](013-websocket)
-
+Примерный ход работы:
+```
+game
+Загадано число в диапазоне от 0 до 100
+1
+Больше
+75
+Меньше
+55
+Отгадано число 55
+```
